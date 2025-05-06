@@ -1,0 +1,379 @@
+/* -------------------------------fondo pantalla principal--------------------------------------------*/
+
+.fondoPantallaPrincipal {
+    background-image: url(/fondoprincipal.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: black;
+}
+
+/* -------------------------------Presentacion principal--------------------------------------------*/
+
+.lg {
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 120px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgba(255, 255, 0, 1);
+    cursor: pointer;
+}
+
+.cubo {
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    top: 120px;
+    left: 500px;
+    transform-style: preserve-3d;
+    transition: transform .1s ease;
+    cursor: pointer;
+    animation: rotarCubo 8s infinite linear
+}
+
+.cara {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    backface-visibility: visible;
+    border-radius: 50px;
+    background: linear-gradient(145deg, rgba(0, 0, 0, .7), rgba(0, 0, 50, .3));
+    border: 1px solid rgba(255, 255, 255, 1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 0, 1);
+    cursor: pointer;
+}
+
+.cara::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, transparent, rgba(255, 255, 255, .2), transparent);
+    top: -100%;
+    left: -100%;
+    transition: all .5s ease;
+    transform: translateZ(20px);
+
+}
+
+.active .izquierda::before {
+    top: 100%;
+    left: 100%;
+}
+
+.frontal {
+    transform: translateZ(140px);
+}
+
+.posterior {
+    transform: translateZ(-140px) rotateY(180deg);
+}
+
+.derecha {
+    transform: translateX(140px) rotateY(90deg);
+}
+
+.izquierda {
+    transform: translateX(-140px) rotateY(-90deg);
+}
+
+.arriba {
+    transform: translateY(-140px) rotateX(90deg);
+}
+
+.abajo {
+    transform: translateY(140px) rotateX(-90deg);
+}
+
+@keyframes rotarCubo {
+    0% {
+        transform: rotateX(-20deg) rotateY(0deg);
+    }
+
+    25% {
+        transform: rotateX(-20deg) rotateY(90deg);
+    }
+
+    50% {
+        transform: rotateX(-20deg) rotateY(180deg);
+    }
+
+    75% {
+        transform: rotateX(-20deg) rotateY(270deg);
+    }
+
+    100% {
+        transform: rotateX(-20deg) rotateY(360deg);
+    }
+}
+
+.div0 {
+    position: relative;
+    display: grid;
+    grid-template-columns: 50px 180px 50px;
+    grid-template-rows: repeat(1, 280px);
+    grid-auto-flow: column;
+    text-align: center;
+    height: 250px;
+    width: 280px;
+    cursor: pointer;
+}
+
+.div1 {
+    height: 250px;
+    cursor: pointer;
+}
+
+.div2 {
+    position: relative;
+    display: grid;
+    grid-template-columns: 180px;
+    grid-template-rows: 80px 40px 40px 40px;
+    grid-auto-flow: column;
+    text-align: center;
+    height: 250px;
+    width: 180px;
+    background: radial-gradient(rgba(20, 20, 20, .4), rgba(0, 0, 0, .7));
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.div3 {
+    height: 250px;
+    cursor: pointer;
+}
+
+.icoIma {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.etiIma {
+    font-size: 14px;
+}
+
+.ima {
+    margin-left: 50px;
+    margin-right: 80px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+}
+
+/*-----------------   proceso 1   ----------------------------*/
+
+.cubo1 {
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    top: 120px;
+    left: 500px;
+    transition: transform .1s ease;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    animation-name: rotarCubo1;
+    animation-iteration-count: var(--rot);
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+.frontal1 {
+    transform: translateX(-470px) translateY(-100px);
+    transition: all 3s linear;
+}
+
+.izquierda1 {
+    transform: translateX(-470px) translateY(200px);
+    transition: all 3s linear;
+}
+
+.posterior1 {
+    transform: translateX(-150px) translateY(-100px);
+    transition: all 3s linear;
+}
+
+.derecha1 {
+    transform: translateX(-150px) translateY(200px);
+    transition: all 3s linear;
+}
+
+.arriba1 {
+    transform: translateX(170px) translateY(-100px);
+    transition: all 3s linear;
+}
+
+.abajo1 {
+    transform: translateX(170px) translateY(200px);
+    transition: all 3s linear;
+}
+
+@keyframes rotarCubo1 {
+    0% {
+        transform: rotateX(-20deg) rotateY(0deg);
+    }
+
+    25% {
+        transform: rotateX(-20deg) rotateY(90deg);
+    }
+
+    50% {
+        transform: rotateX(-20deg) rotateY(180deg);
+    }
+
+    75% {
+        transform: rotateX(-20deg) rotateY(270deg);
+    }
+
+    100% {
+        transform: rotateX(-20deg) rotateY(360deg);
+    }
+}
+
+.cara:hover {
+    scale: 1.04;
+    box-shadow: 0 0 40px rgba(255, 255, 0, 0.9);
+}
+
+.cara:hover::before {
+    top: 100%;
+    left: 100%;
+    opacity: 1;
+}
+
+.lg1 {
+    position: absolute;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgba(255, 255, 0, 1);
+    transform: translateX(530px) translateY(-90px);
+    transition: all 3s linear;
+    cursor: pointer;
+}
+
+.etit{
+    cursor: pointer;
+}
+
+.div2:hover{
+    box-shadow: 0 0 15px rgba(255, 255, 255, .9);        
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,195 @@
+#cristal {
+    background: linear-gradient(to bottom, rgba(0, 100, 100, .5), rgba(0, 0, 0, .5), rgba(0, 100, 100, 0.8));
+}
+
+#sombra {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .9));
+}
+
+#pcolor {
+    border-image-source: radial-gradient(rgba(255, 255, 255, 1), rgba(50, 50, 50, 1));
+    border-width: 15px;
+    border-style: solid;
+    border-image-slice: 1;
+}
+
+#pconfi {
+    border-image-source: radial-gradient(rgba(255, 255, 255, 1), rgba(50, 50, 50, 1));
+    border-width: 15px;
+    border-style: solid;
+    border-image-slice: 1;
+    background: radial-gradient(rgba(0, 100, 100, .5), rgba(0, 50, 50, .5));
+}
+
+.eti {
+    background: radial-gradient(rgba(200, 200, 200, .5), rgba(0, 0, 0, .5));
+    text-align: center;
+    color: rgba(255, 255, 0, 1);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    
+}
+
+.c1 {
+    background: radial-gradient(rgba(200, 200, 200, .4), rgba(0, 0, 0, .7));
+    text-align: center;
+    color: rgba(255, 255, 0, 1);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    height: 20px;
+}
+
+.traspa {
+    background-color: rgba(0, 0, 0, .3);
+    border-color: rgba(255, 255, 255, .4);
+    border-width: 1px;
+    border-style: solid;
+}
+
+.sombraaguja {
+    opacity: 0.5;
+}
+
+#etidia {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 44px;
+    background-color: rgba(0, 0, 0, .6);
+    text-align: center;
+    line-height: 46px;
+    color: rgba(255, 255, 255, 1);
+}
+
+#pfecha {
+    background-color: rgba(0, 0, 0, 1);
+    border-image-source: radial-gradient(rgba(255, 255, 255, 1), rgba(50, 50, 50, 1));
+    border-width: 15px;
+    border-style: solid;
+    border-image-slice: 1;   
+}
+
+.etifecha {
+    color: rgba(255, 255, 255, 1);
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+}
+
+#etifecha4 {
+    color: rgba(255, 255, 255, .8);
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    transform: rotate3d(1, 0, 0, 200deg);
+}
+
+#cristalfecha {
+    background: linear-gradient(to bottom, rgba(0, 100, 100, .5), rgba(0, 0, 0, .5), rgba(0, 100, 100, 0.8));
+}
+
+#pcale {
+    border-image-source: radial-gradient(rgba(255, 255, 255, 1), rgba(50, 50, 50, 1));
+    border-width: 1px;
+    border-style: solid;
+    border-image-slice: 1;
+}
+
+.rotulo {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .7);
+    border-image-source: radial-gradient(rgba(255, 255, 255, 1), rgba(50, 50, 50, 1));
+    border-width: 1px;
+    border-style: solid;
+    border-image-slice: 1;
+    background-color: rgba(0, 0, 0, .7);
+    line-height: 60px;
+}
+
+#objdiacristal {
+    background-color: rgba(255, 0, 0, .1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .7);
+    border-image-source: radial-gradient(rgba(255, 255, 255, 1), rgba(50, 50, 50, 1));
+    border-width: 1px;
+    border-style: solid;
+    border-image-slice: 1;
+}
+
+#psele {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .7);
+    border-image-source: radial-gradient(rgba(255, 255, 255, 1), rgba(50, 50, 50, 1));
+    border-width: 1px;
+    border-style: solid;
+    border-image-slice: 1;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.sele {
+    background: radial-gradient(rgba(200, 200, 200, .4), rgba(0, 0, 0, .7));
+    text-align: center;
+    color: rgba(255, 255, 0, 1);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.selereloj {
+    background: radial-gradient(rgba(200, 200, 200, .4), rgba(0, 0, 0, .7));
+    text-align: center;
+    color: rgba(255, 255, 0, 1);
+    font-family:Arial, Helvetica, sans-serif       
+}
+
+.bSalir {
+    position: absolute;    
+    display: flex;
+    left: 460px;
+    top:530px;
+    padding: 20px;
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;    
+    color: white;
+    background: radial-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
+    border-radius: 15px;
+    border-color: rgba(163, 149, 19, 0.8);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.8s ease;
+    z-index: 1;
+}
+
+.bSalir::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(0deg,
+            transparent,
+            transparent 30%,
+            rgba(255, 255, 255, 0.3));
+    transform: rotate(-45deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.bSalir:hover {
+    transform: scale(1.1);
+    box-Shadow: 10px 10px 10px rgba(255, 200, 200, .2);
+    color: rgba(255, 255, 0, 0.8);
+}
+
+.bSalir:hover::before {
+    opacity: 1;
+    transform: rotate(-40deg) translateY(100%);
+}
