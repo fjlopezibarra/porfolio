@@ -5,7 +5,7 @@ const MiDat = () => {
 
   miDat.controlReloj;
   miDat.controlCome;
-
+  
 
 
 

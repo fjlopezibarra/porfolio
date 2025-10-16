@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../../StylePresu.css'
 import { useNavigate } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -9,6 +9,10 @@ const Presu = () => {
   const navigator = useNavigate();
   const [icono, setIcono] = useState(true)
 
+  useEffect(() => {
+    window.addEventListener('resize', ajustar);
+  }, []);
+
   function salir() {
     navigator("/");
   }
@@ -16,13 +20,29 @@ const Presu = () => {
   const irItem = (index) => {
     const item = document.getElementById(index);
     if (item) {
-      item.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
   };
 
   function cambiarIcono() {
     setIcono(!icono);
   }
+
+  ajustar();
+
+  function ajustar() {
+    let ventana = (window.innerWidth - 250) / 1200;
+    let alto = (window.innerHeight - 100) / 541;
+    let tPorcentaje = 20 * ventana + "px";
+    let tPorcentaje1 = 28 * ventana + "px";
+    let tPorcentaje2 = 30 * ventana + "px";
+    let tAltoPre = 543 * alto + "px";
+    document.documentElement.style.setProperty('--tLetPre', tPorcentaje);
+    document.documentElement.style.setProperty('--tLet1Pre', tPorcentaje1);
+    document.documentElement.style.setProperty('--tLet2Pre', tPorcentaje2);
+    document.documentElement.style.setProperty('--tAltoPre', tAltoPre);
+  }
+
 
 
   return (
@@ -53,13 +73,14 @@ const Presu = () => {
             <div id="collapseOne" className="accordion-collapse collapse show " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
               <div>
                 <div className="contenedorHojaPre">
-                  <button className='botonAAPre' onClick={() => irItem("indice1")}>Introducción</button>
-                  <button className='botonAAPre' onClick={() => irItem("indice2")}>Objetivo2</button>
-                  <button className='botonAAPre' onClick={() => irItem("indice3")}>Objetivo3</button>
-                  <button className='botonAAPre' onClick={() => irItem("indice4")}>Objetivo4</button>
-                  <button className='botonAAPre' onClick={() => irItem("indice5")}>Objetivo5</button>
-                  <button className='botonAAPre' onClick={() => irItem("indice6")}>Objetivo6</button>
-                  <button className='botonAAPre' onClick={() => irItem("indice7")}>Objetivo7</button>
+                  <button className='botonAAPre' onClick={() => irItem("indice1")}>Título</button>
+                  <button className='botonAAPre' onClick={() => irItem("indice2")}>Descripción</button>
+                  <button className='botonAAPre' onClick={() => irItem("indice3")}>Herramientas</button>
+                  <button className='botonAAPre' onClick={() => irItem("indice4")}>Objetivo para compras</button>
+                  <button className='botonAAPre' onClick={() => irItem("indice5")}>Objetivo para ventas </button>
+                  <button className='botonAAPre' onClick={() => irItem("indice6")}>Objetivo para Mano de obra</button>
+                  <button className='botonAAPre' onClick={() => irItem("indice7")}>Compilación</button>
+                  <button className='botonAAPre' onClick={() => irItem("indice8")}>Ver video</button>
                 </div>
               </div>
             </div>
@@ -67,151 +88,134 @@ const Presu = () => {
         </div>
       </div>
 
-      <div className='paginaPre'  >
+      <div id="paginaPre" className='paginaPre'  >
 
         <div className='divImagenPre' id="indice1">
           <img className='imagenPre' src='recursospresu/fotopresu1.png'></img>
         </div>
         <div className='divLetraPre'>
-          <h1 className='tituloPre'>Introducción</h1>
+          <h1 className='tituloPre'>Título</h1>
           <p className='tituloLetraPre'>
-            Proyecto Full-Stack de gestión bancaria on-line.
+            Presu Gestión Comercial.
             <br></br>
+          </p>
+        </div>
 
+        <div className='divImagenPre' id="indice2">
+          <img className='imagenPre' src='recursospresu/fotopresu2.png'></img>
+        </div>
+        <div className='divLetraPre'>
+          <h1 className='tituloPre'>Descripción</h1>
+          <p className='tituloLetraPre'>
+            Aplicación completa para la gestión comercial de empresas de la construcción y empresas instaladoras de electricidad, fontaneria, etc.
+            <br></br>
+            Aplicación integramente desarrollada por mi.
+          </p>
+        </div>
 
+        <div className='divImagenPre' id="indice3">
+          <img className='imagenPre' src='recursospresu/fotopresu3.png'></img>
+        </div>
+        <div className='divLetraPre'>
+          <h1 className='tituloPre'>Herramientas</h1>
+          <p className='tituloLetraPre'>
+            <img className="imgIco1Pre" src="mysql.png"></img>Base de datos MySQL.<br />
+            <img className="imgIco1Pre" src="java.png"></img>Lenguaje JavaFX.<br />
+            <img className="imgIco1Pre" src="scene.png"></img>Escenas creadas con SceneBuilder.<br />
+            <img className="imgIco1Pre" src="jasper.png"></img>Informes creados con Jaspersoft.<br />
 
-            kdjkjdkjkdjkjdkjkdjkjdkjdk
+          </p>
+        </div>
 
-            kjdkjkdjkdjkjkdjkjdkjkdjkdekjekjekjek
-            ekjkejkejkejke
-            ekjkje ejkjke kjkej kjkjekj kejkjkje
-            dieje
+        <div className='divImagenPre' id="indice4">
+          <img className='imagenPre' src='recursospresu/fotopresu4.png'></img>
+        </div>
+        <div className='divLetraPre'>
+          <h1 className='tituloPre'>Objetivo para compras</h1>
+          <p className='tituloLetraPre'>
+            -Circuito de compras.<br />
+            -Creación de pedidos automaticos a partir del presupuesto de venta.<br />
+            -Alerta de precio superior al ofertado en el presupuesto de venta.<br />
+            -Albarán de compra automático a partir del pedido de compra.<br />
+            -Control de la cantidad pendiente de recibir.<br />
+            -Actualización automática de los precios de los artículos y compuestos.
+            
+          </p>
+        </div>
 
-            dkjdkjk
-            dkjdkjkdkjkjkd
-            kjdkjkdjkdjkjkdjkjdkjkdjkddkjkjkj
+        <div className='divImagenPre' id="indice5">
+          <img className='imagenPre' src='recursospresu/fotopresu5.png'></img>
+        </div>
+        <div className='divLetraPre'>
+          <h1 className='tituloPre'>Objetivo para ventas</h1>
+          <p className='tituloLetraPre'>
+            -Certificaciones de obra a origen.<br />
+            -Certificación manual o por %.<br />
+            -Impresión de las certificaciones para envío al cliente.<br />
+            -Factura automática a partir de la certificación.<br />
+            -Control de la cantidad a origen anterior.<br />
+            -% de retención en factura.<br />
+            -Balance desglosado del presupuesto .<br />
+            -Balance real de costes y facturación del presupuesto.
+          </p>
+        </div>
 
+        <div className='divImagenPre' id="indice6">
+          <img className='imagenPre' src='recursospresu/fotopresu6.png'></img>
+        </div>
+        <div className='divLetraPre'>
+          <h1 className='tituloPre'>Objetivo para mano de obra</h1>
+          <p className='tituloLetraPre'>
+            -Fichero de Personal.<br />
+            -Altas, bajas, categorias, departamentos.<br />
+            -Partes de trabajo.<br />
+            -Resumen de partes de trabajo por mes y dia.<br />
+            -Aplicación de los costes al presupuesto.<br />
+          </p>
+        </div>
+
+        <div className='divImagenPre' id="indice7">
+          <img className='imagenPre' src='recursospresu/fotopresu7.png'></img>
+        </div>
+        <div className='divLetraPre'>
+          <h1 className='tituloPre'>Compilación</h1>
+          <p className='tituloLetraPre'>
+            Para el desarrollo de la aplicación he usado:<br />
+            - IDE VSCode<br />
+            - Maven<br />
           </p>
         </div>
 
 
 
-        <div className='divImagenPre' id="indice2">
-          <img className='imagenPre' src='recursosbancomar/fotobancomar2.png'></img>
-        </div>
-
-        <span>
-          objetivo 2
-          kdjkjdkjkdjkjdkjkdjkjdkjdk
-          kjdkjkdjkdjkjkdjkjdkjkdjkdekjekjekjek
-          ekjkejkejkejke
-          ekjkje ejkjke kjkej kjkjekj kejkjkje
-          dieje
-
-          dkjdkjk
-          dkjdkjkdkjkjkd
-          kjdkjkdjkdjkjkdjkjdkjkdjkddkjkjkj
-
-        </span>
-
-        <div className='divImagenPre' id="indice3">
-          <img className='imagenPre' src='recursosbancomar/fotobancomar3.png'></img>
-        </div>
-
-        <span>
-          objetivo 3
-          kdjkjdkjkdjkjdkjkdjkjdkjdk
-          kjdkjkdjkdjkjkdjkjdkjkdjkdekjekjekjek
-          ekjkejkejkejke
-          ekjkje ejkjke kjkej kjkjekj kejkjkje
-          dieje
-
-          dkjdkjk
-          dkjdkjkdkjkjkd
-          kjdkjkdjkdjkjkdjkjdkjkdjkddkjkjkj
-
-        </span>
-
-        <div className='divImagenPre' id="indice4">
-          <img className='imagenPre' src='recursosbancomar/fotobancomar4.png'></img>
-        </div>
-
-        <span>
-          objetivo 4
-          kdjkjdkjkdjkjdkjkdjkjdkjdk
-          kjdkjkdjkdjkjkdjkjdkjkdjkdekjekjekjek
-          ekjkejkejkejke
-          ekjkje ejkjke kjkej kjkjekj kejkjkje
-          dieje
-
-          dkjdkjk
-          dkjdkjkdkjkjkd
-          kjdkjkdjkdjkjkdjkjdkjkdjkddkjkjkj
-
-        </span>
-
-        <div className='divImagenPre' id="indice5">
-          <img className='imagenPre' src='recursosbancomar/fotobancomar5.png'></img>
-        </div>
-
-        <span>
-          objetivo 5
-          kdjkjdkjkdjkjdkjkdjkjdkjdk
-          kjdkjkdjkdjkjkdjkjdkjkdjkdekjekjekjek
-          ekjkejkejkejke
-          ekjkje ejkjke kjkej kjkjekj kejkjkje
-          dieje
-
-          dkjdkjk
-          dkjdkjkdkjkjkd
-          kjdkjkdjkdjkjkdjkjdkjkdjkddkjkjkj
-
-        </span>
-
-        <div className='divImagenPre' id="indice6">
-          <img className='imagenPre' src='recursosbancomar/fotobancomar6.png'></img>
-        </div>
-
-        <span>
-          objetivo 6
-          kdjkjdkjkdjkjdkjkdjkjdkjdk
-          kjdkjkdjkdjkjkdjkjdkjkdjkdekjekjekjek
-          ekjkejkejkejke
-          ekjkje ejkjke kjkej kjkjekj kejkjkje
-          dieje
-
-          dkjdkjk
-          dkjdkjkdkjkjkd
-          kjdkjkdjkdjkjkdjkjdkjkdjkddkjkjkj
-
-        </span>
 
 
-        <div className='divImagenPre' id="indice7">
-          <video className="videoPre"  controls>
-            <source src='recursosbancomar/videobancomar.mp4' type="video/mp4" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div className='divVideoPre' id="indice8">
+          <video className="videoPre" controls>
+            <source src="/recursospresu/videopresu1.mp4" type="video/mp4" />
             Tu navegador no soporta el elemento de video.
           </video>
         </div>
-
-        <span>
-          objetivo 7
-          Ejemplo de estructura para cada proyecto:
-          Título del proyecto: Nombre claro y conciso del proyecto.
-          Descripción general: Breve resumen del proyecto y su objetivo.
-          Tu rol y responsabilidades: Explica tu papel en el proyecto y las tareas que realizaste.
-          Tecnologías utilizadas: Detalla las herramientas, lenguajes de programación, frameworks y bases de datos que empleaste.
-          Desafíos y soluciones: Describe los desafíos que enfrentaste y cómo los resolviste.
-          Resultados y logros: Explica los resultados del proyecto y los logros que alcanzaste.
-          Ejemplos visuales: Incluye capturas de pantalla, diagramas o enlaces a versiones en vivo.
-          Código relevante (opcional): Si es apropiado, muestra fragmentos de código para ilustrar tu trabajo.
-          Aprendizajes: Reflexiona sobre lo que aprendiste durante el desarrollo del proyecto.
-        </span>
-
-
-
-
-
 
 
 
@@ -219,6 +223,17 @@ const Presu = () => {
 
 
       </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -248,16 +263,41 @@ const Presu = () => {
 
 
       <footer className='divFooterPre'>
-        <span>Proyecto Full-Stack gestión bancaria</span>
+        <span>Proyecto gestión comercial para empresas instaladoras</span>
         <img className="imgIcoPre" src='java.png'></img>
-        <label className='etiIcoPre'>JavaFX</label>
+        <span className='etiIcoPre'>JavaFX</span>
+        <img className="imgIcoPre" src="scene.png"></img>
         <img className="imgIcoPre" src="mysql.png"></img>
         <img className="imgIcoPre" src="jasper.png"></img>
-        <img className="imgIcoPre" src="scene.png"></img>
-        </footer>
+      </footer>
 
     </div>
   )
 }
 
 export default Presu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../../StyleBancomar.css'
 import { useNavigate } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -9,6 +9,10 @@ const Bancomar = () => {
   const navigator = useNavigate();
   const [icono, setIcono] = useState(true)
 
+  useEffect(() => {
+    window.addEventListener('resize', ajustar);
+  }, []);
+
   function salir() {
     navigator("/");
   }
@@ -16,13 +20,29 @@ const Bancomar = () => {
   const irItem = (index) => {
     const item = document.getElementById(index);
     if (item) {
-      item.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
   };
 
   function cambiarIcono() {
     setIcono(!icono);
   }
+
+  ajustar();
+
+  function ajustar() {
+    let ventana = (window.innerWidth - 250) / 1200;
+    let alto=(window.innerHeight-100)/541;
+    let tPorcentaje = 20 * ventana + "px";
+    let tPorcentaje1 = 28 * ventana + "px";
+    let tPorcentaje2 = 30 * ventana + "px";
+    let tAltoBan=543*alto+"px";
+    document.documentElement.style.setProperty('--tLetBan', tPorcentaje);
+    document.documentElement.style.setProperty('--tLet1Ban', tPorcentaje1);
+    document.documentElement.style.setProperty('--tLet2Ban', tPorcentaje2);
+    document.documentElement.style.setProperty('--tAltoBan', tAltoBan);
+  }
+
 
 
   return (
@@ -53,13 +73,14 @@ const Bancomar = () => {
             <div id="collapseOne" className="accordion-collapse collapse show " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
               <div>
                 <div className="contenedorHojaBan">
-                  <button className='botonAABan' onClick={() => irItem("indice1")}>Introducción</button>
-                  <button className='botonAABan' onClick={() => irItem("indice2")}>Objetivo2</button>
-                  <button className='botonAABan' onClick={() => irItem("indice3")}>Objetivo3</button>
-                  <button className='botonAABan' onClick={() => irItem("indice4")}>Objetivo4</button>
-                  <button className='botonAABan' onClick={() => irItem("indice5")}>Objetivo5</button>
-                  <button className='botonAABan' onClick={() => irItem("indice6")}>Objetivo6</button>
-                  <button className='botonAABan' onClick={() => irItem("indice7")}>Objetivo7</button>
+                  <button className='botonAABan' onClick={() => irItem("indice1")}>Título</button>
+                  <button className='botonAABan' onClick={() => irItem("indice2")}>Descripción</button>
+                  <button className='botonAABan' onClick={() => irItem("indice3")}>Herramientas Backend</button>
+                  <button className='botonAABan' onClick={() => irItem("indice4")}>Herramientas Frontend</button>
+                  <button className='botonAABan' onClick={() => irItem("indice5")}>Objetivo nivel cliente</button>
+                  <button className='botonAABan' onClick={() => irItem("indice6")}>Objetivo nivel administrador</button>
+                  <button className='botonAABan' onClick={() => irItem("indice7")}>Compilación</button>
+                  <button className='botonAABan' onClick={() => irItem("indice8")}>Ver video</button>
                 </div>
               </div>
             </div>
@@ -67,151 +88,139 @@ const Bancomar = () => {
         </div>
       </div>
 
-      <div className='paginaBan'  >
+      <div id="paginaBan" className='paginaBan'  >
 
         <div className='divImagenBan' id="indice1">
           <img className='imagenBan' src='recursosbancomar/fotobancomar1.png'></img>
         </div>
         <div className='divLetraBan'>
-          <h1 className='tituloBan'>Introducción</h1>
+          <h1 className='tituloBan'>Título</h1>
           <p className='tituloLetraBan'>
-            Proyecto Full-Stack de gestión bancaria on-line.
+            Bancomar proyecto banca on-line
             <br></br>
+          </p>
+        </div>
 
+        <div className='divImagenBan' id="indice2">
+          <img className='imagenBan' src='recursosbancomar/fotobancomar2.png'></img>
+        </div>
+        <div className='divLetraBan'>
+          <h1 className='tituloBan'>Descripción</h1>
+          <p className='tituloLetraBan'>
+            Proyecto Full-Stack de banca on-line.<br />
+            -Pagina web cliente.<br />
+            -Servidor java.<br />
+            -Programa javafx independiente para oficina.            
+            
+          </p>
+        </div>
 
+        <div className='divImagenBan' id="indice3">
+          <img className='imagenBan' src='recursosbancomar/fotobancomar3.png'></img>
+        </div>
+        <div className='divLetraBan'>
+          <h1 className='tituloBan'>Herramientas Backend</h1>
+          <p className='tituloLetraBan'>
+            <img className="imgIco1Ban" src="mysql.png"></img>Base de datos MySQL.<br />
+            <img className="imgIco1Ban" src="java.png"></img>Lenguaje Java con arquitectura en capas.<br />
+            Clases, Controller, DTO (Data Transfer Object), Mapper, Repositorio, Service.<br />
+            <img className="imgIco1Ban" src="spring.png"></img>Frameworks Spring Boot + JPA + Lombok.<br />
+            Claves usuario cifradas con Argon2.
+          </p>
+        </div>
 
-            kdjkjdkjkdjkjdkjkdjkjdkjdk
+        <div className='divImagenBan' id="indice4">
+          <img className='imagenBan' src='recursosbancomar/fotobancomar4.png'></img>
+        </div>
+        <div className='divLetraBan'>
+          <h1 className='tituloBan'>Herramientas Frontend</h1>
+          <p className='tituloLetraBan'>
+            <img className="imgIco1Ban" src="htlm.png"></img>Lenguaje HTML.<br />
+            <img className="imgIco1Ban" src="javascript.png"></img>Lenguaje JavaScript.<br />
+            <img className="imgIco1Ban" src="react.png"></img>Frameworks React.<br />
+            <img className="imgIco1Ban" src="css.png"></img>Lenguaje de estilos CSS.<br />
+            <img className="imgIco2Ban" src="bootstrap.png"></img>Bootstrap.<br />
+            -Librería Axios.<br />
+            -Librería jsPDF.
+          </p>
+        </div>
 
-            kjdkjkdjkdjkjkdjkjdkjkdjkdekjekjekjek
-            ekjkejkejkejke
-            ekjkje ejkjke kjkej kjkjekj kejkjkje
-            dieje
+        <div className='divImagenBan' id="indice5">
+          <img className='imagenBan' src='recursosbancomar/fotobancomar5.png'></img>
+        </div>
+        <div className='divLetraBan'>
+          <h1 className='tituloBan'>Objetivo a nivel cliente</h1>
+          <p className='tituloLetraBan'>
+            -Interfaz clara e intuitiva para el cliente.<br />
+            -Consulta de cuentas y movimientos.<br />
+            -Paginación de los movimientos.<br />
+            -Balance de saldos.<br />
+            -Filtro de movimientos.<br />
+            -Descarga de movimientos y asientos.<br />
+            -Operaciones bancarias.<br />
+            
+          </p>
+        </div>
 
-            dkjdkjk
-            dkjdkjkdkjkjkd
-            kjdkjkdjkdjkjkdjkjdkjkdjkddkjkjkj
+        <div className='divImagenBan' id="indice6">
+          <img className='imagenBan' src='recursosbancomar/fotobancomar6.png'></img>
+        </div>
+        <div className='divLetraBan'>
+          <h1 className='tituloBan'>Objetivo a nivel administrador</h1>
+          <p className='tituloLetraBan'>
+            -Programa independiente JavaFX para oficina bancaria.<br />
+            -CRUD para todas las tablas y subtablas.<br />
+            -Búsquedas por cualquier campo.<br />
+            -Operacines bancarias.<br />
+            
+          </p>
+        </div>
 
+        <div className='divImagenBan' id="indice7">
+          <img className='imagenBan' src='recursosbancomar/fotobancomar7.png'></img>
+        </div>
+        <div className='divLetraBan'>
+          <h1 className='tituloBan'>Compilación</h1>
+          <p className='tituloLetraBan'>
+            Para el desarrollo de la aplicación he usado:<br />
+            - IDE VSCode<br />
+            - Maven<br />
+            - Spring<br />
+            - Vite<br />
+            - node.js y NPM.<br />
           </p>
         </div>
 
 
 
-        <div className='divImagenBan' id="indice2">
-          <img className='imagenBan' src='recursosbancomar/fotobancomar2.png'></img>
-        </div>
-
-        <span>
-          objetivo 2
-          kdjkjdkjkdjkjdkjkdjkjdkjdk
-          kjdkjkdjkdjkjkdjkjdkjkdjkdekjekjekjek
-          ekjkejkejkejke
-          ekjkje ejkjke kjkej kjkjekj kejkjkje
-          dieje
-
-          dkjdkjk
-          dkjdkjkdkjkjkd
-          kjdkjkdjkdjkjkdjkjdkjkdjkddkjkjkj
-
-        </span>
-
-        <div className='divImagenBan' id="indice3">
-          <img className='imagenBan' src='recursosbancomar/fotobancomar3.png'></img>
-        </div>
-
-        <span>
-          objetivo 3
-          kdjkjdkjkdjkjdkjkdjkjdkjdk
-          kjdkjkdjkdjkjkdjkjdkjkdjkdekjekjekjek
-          ekjkejkejkejke
-          ekjkje ejkjke kjkej kjkjekj kejkjkje
-          dieje
-
-          dkjdkjk
-          dkjdkjkdkjkjkd
-          kjdkjkdjkdjkjkdjkjdkjkdjkddkjkjkj
-
-        </span>
-
-        <div className='divImagenBan' id="indice4">
-          <img className='imagenBan' src='recursosbancomar/fotobancomar4.png'></img>
-        </div>
-
-        <span>
-          objetivo 4
-          kdjkjdkjkdjkjdkjkdjkjdkjdk
-          kjdkjkdjkdjkjkdjkjdkjkdjkdekjekjekjek
-          ekjkejkejkejke
-          ekjkje ejkjke kjkej kjkjekj kejkjkje
-          dieje
-
-          dkjdkjk
-          dkjdkjkdkjkjkd
-          kjdkjkdjkdjkjkdjkjdkjkdjkddkjkjkj
-
-        </span>
-
-        <div className='divImagenBan' id="indice5">
-          <img className='imagenBan' src='recursosbancomar/fotobancomar5.png'></img>
-        </div>
-
-        <span>
-          objetivo 5
-          kdjkjdkjkdjkjdkjkdjkjdkjdk
-          kjdkjkdjkdjkjkdjkjdkjkdjkdekjekjekjek
-          ekjkejkejkejke
-          ekjkje ejkjke kjkej kjkjekj kejkjkje
-          dieje
-
-          dkjdkjk
-          dkjdkjkdkjkjkd
-          kjdkjkdjkdjkjkdjkjdkjkdjkddkjkjkj
-
-        </span>
-
-        <div className='divImagenBan' id="indice6">
-          <img className='imagenBan' src='recursosbancomar/fotobancomar6.png'></img>
-        </div>
-
-        <span>
-          objetivo 6
-          kdjkjdkjkdjkjdkjkdjkjdkjdk
-          kjdkjkdjkdjkjkdjkjdkjkdjkdekjekjekjek
-          ekjkejkejkejke
-          ekjkje ejkjke kjkej kjkjekj kejkjkje
-          dieje
-
-          dkjdkjk
-          dkjdkjkdkjkjkd
-          kjdkjkdjkdjkjkdjkjdkjkdjkddkjkjkj
-
-        </span>
 
 
-        <div className='divImagenBan' id="indice7">
-          <video className="videoBan"  controls>
-            <source src='recursosbancomar/videobancomar.mp4' type="video/mp4" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div className='divVideoBan' id="indice8">
+          <video className="videoBan" controls>
+            <source src="/recursosbancomar/videobancomar1.mp4" type="video/mp4" />
             Tu navegador no soporta el elemento de video.
           </video>
         </div>
-
-        <span>
-          objetivo 7
-          Ejemplo de estructura para cada proyecto:
-          Título del proyecto: Nombre claro y conciso del proyecto.
-          Descripción general: Breve resumen del proyecto y su objetivo.
-          Tu rol y responsabilidades: Explica tu papel en el proyecto y las tareas que realizaste.
-          Tecnologías utilizadas: Detalla las herramientas, lenguajes de programación, frameworks y bases de datos que empleaste.
-          Desafíos y soluciones: Describe los desafíos que enfrentaste y cómo los resolviste.
-          Resultados y logros: Explica los resultados del proyecto y los logros que alcanzaste.
-          Ejemplos visuales: Incluye capturas de pantalla, diagramas o enlaces a versiones en vivo.
-          Código relevante (opcional): Si es apropiado, muestra fragmentos de código para ilustrar tu trabajo.
-          Aprendizajes: Reflexiona sobre lo que aprendiste durante el desarrollo del proyecto.
-        </span>
-
-
-
-
-
 
 
 
@@ -219,6 +228,17 @@ const Bancomar = () => {
 
 
       </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -248,16 +268,16 @@ const Bancomar = () => {
 
 
       <footer className='divFooterBan'>
-        <span>Proyecto Full-Stack gestión bancaria</span>
-        <img className="imgIcoBan" src='java.png'></img>
-        <img className="imgIcoBan" src="spring.png"></img>
-        <img className="imgIcoBan" src="mysql.png"></img>
-        <span className='etiIcoBan'>JPA</span>
-        <img className="imgIcoBan" src="htlm.png"></img>
-        <img className="imgIcoBan" src="javascript.png"></img>
-        <img className="imgIcoBan" src="css.png"></img>
-        <img className="imgIcoBan" src="react.png"></img>
-        <label className='etiIcoBan'>Axios</label>
+        <span>Proyecto Banca on-line</span>
+        <img className="imgIco" src='java.png'></img>
+        <img className="imgIco" src="spring.png"></img>
+        <img className="imgIco" src="mysql.png"></img>
+        <span className='etiIco'>JPA</span>
+        <img className="imgIco" src="htlm.png"></img>
+        <img className="imgIco" src="javascript.png"></img>
+        <img className="imgIco" src="css.png"></img>
+        <img className="imgIco" src="react.png"></img>
+        <label className='etiIco'>Axios</label>
       </footer>
 
     </div>

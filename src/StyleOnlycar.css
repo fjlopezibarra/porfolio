@@ -1,11 +1,10 @@
-
 /* -------------------------------Header--------------------------------------------*/
-.fondo{
+.fondo {
     position: absolute;
     height: 100%;
     width: 100%;
     background-color: black;
-    overflow:hidden; 
+    overflow: hidden;
 }
 
 .barraHeader {
@@ -30,7 +29,7 @@
 .divHeader1 {
     display: flex;
     align-items: center;
-    gap:20px;
+    gap: 20px;
 }
 
 .logoHeader {
@@ -41,12 +40,12 @@
     background-size: cover;
     height: 48px;
     width: 48px;
-    
+
 }
 
 .nombreHeader {
     color: white;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
 
@@ -54,10 +53,10 @@
     position: absolute;
     display: flex;
     align-items: center;
-    margin-left: 400px;
+    margin-left: 35%;
 }
 
-.imaBotonGeneral{
+.imaBotonGeneral {
     width: 25px;
     height: 25px;
     margin-top: -7px;
@@ -65,15 +64,15 @@
 }
 
 .botonGeneral {
-    position:relative;
+    position: relative;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    font-weight: bold;    
-    letter-spacing: 2px; 
+    font-weight: bold;
+    letter-spacing: 2px;
     color: white;
     background: radial-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
     border-radius: 15px;
@@ -117,8 +116,8 @@
 
 .divFooter {
     position: absolute;
-    display:flex;
-    bottom: 0;
+    display: flex;
+    bottom: 0px;
     right: 0;
     margin-left: 0px;
     margin-right: 4px;
@@ -133,9 +132,10 @@
     background: radial-gradient(rgba(197, 119, 40, 0.7), rgba(0, 0, 0, .4));
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     gap: 10px;
+    z-index: 1;
 }
 
-.imgIco{
+.imgIco {
     width: 25px;
     height: 25px;
 }
@@ -148,16 +148,16 @@
     margin-left: 10px;
     width: 200px;
     border-style: solid;
-    border-color:rgba(163, 149, 19, .9);
+    border-color: rgba(163, 149, 19, .9);
     border-width: 2px;
     border-radius: 8px;
     color: white;
-    box-Shadow: 10px 10px 10px rgba(197, 119, 40, 0.4);     
+    box-Shadow: 10px 10px 10px rgba(197, 119, 40, 0.4);
 }
 
 .contenedorHoja {
     position: relative;
-    display: grid;   
+    display: grid;
     margin: 20px;
     row-gap: 10px;
 }
@@ -188,13 +188,13 @@
 }
 
 .botonAA {
-    position: relative;    
+    position: relative;
     background: radial-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.8);
     border-width: 1px;
     border-radius: 8px;
-    color:white;
+    color: white;
     background: radial-gradient(rgba(197, 119, 40, 0.7), rgba(0, 0, 0, .7));
     text-align: center;
     justify-content: center;
@@ -206,23 +206,24 @@
 
 .botonAA:hover {
     transform: scale(1.1);
-    font-weight: bold;    
+    font-weight: bold;
     letter-spacing: 2px;
     box-Shadow: 10px 10px 10px rgba(50, 50, 50, .1);
     color: rgba(255, 255, 0, 0.9);
 }
 
 
-.pagina{
-    overflow-y: auto;
+.pagina {
+    position: absolute;
+    overflow-y: auto;   
     display: grid;
-    grid-template-columns: 650px 400px;
+    grid-template-columns: 60% 40%;
     grid-template-rows: auto;
     grid-auto-flow: row;
     margin-top: 70px;
     margin-left: 250px;
-    margin-right: 10px;
-    min-height: 543px;
+    margin-right: 0px;
+    height: var(--tAlto);
     max-height: 543px;
     border-style: solid;
     border-color: rgba(163, 149, 19, 0.8);
@@ -230,40 +231,69 @@
     row-gap: 20px;
 }
 
-.divImagen{
+.divImagen {
     margin-top: 10px;
     margin-left: 10px;
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.8);
     border-width: 1px;
-    width: 604px;
-    height: 404px;
-    padding: 2px; 
-    box-Shadow: 10px 10px 10px rgba(197, 119, 40, 0.4); 
+    width: 95%;
+    padding: 2px;
+    box-Shadow: 10px 10px 10px rgba(197, 119, 40, 0.4);
 }
 
-.imagen{
-    width: 600px;
-    height: 400px;
+.imagen {
+   width: 100%;
 }
 
-.divLetra{
+.divLetra {
     margin-top: 10px;
-    margin-left: 10px;     
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 95%; 
 }
 
-.titulo{
-    color:white; 
-    font-size: 26px; 
+.tituloOnly {
+    color: white;
+    margin-left: 10px;
+    font-size: var(--tLet1); 
 }
 
-.tituloLetra{
+.tituloLetra {
+    margin-left: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    color:white;
-    font-size: 20px;      
+    color: white;
+    width: 95%;
+    font-size: var(--tLet);    
 }
 
-.video{
-    width: 600px;
-    height: 400px;
+.divVideo {
+    margin-top: 10px;
+    margin-left: 10px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.8);
+    border-width: 1px;
+    width:140%;
+    padding: 2px;
+    box-Shadow: 10px 10px 10px rgba(197, 119, 40, 0.4);
+}
+
+.video {
+    width: 100%;
+}
+
+.imgIco1{
+    width: var(--tLet2);
+    margin-right: 10px;
+    margin-top: -5px;
+}
+
+.imgIco2{
+    width: var(--tLet2);
+    margin-right: 10px;
+    margin-top: 0px;
+}
+
+.salto {
+   height: 0px;   
 }

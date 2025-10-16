@@ -3,13 +3,9 @@ import Presentacion from '../comun/Presentacion'
 
 
 const Principal = () => {
-    
 
     return (
-        <div>            
-            <div className="fondoPantallaPrincipal" ></div>
-            <Presentacion />                       
-        </div>
+        <Presentacion />
     )
 }
 

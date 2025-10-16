@@ -8,6 +8,8 @@ import Onlycar from './componentes/onlycar/Onlycar'
 import Bancomar from './componentes/bancomar/Bancomar'
 import Presu from './componentes/presu/Presu'
 import Fotojav from './componentes/fotojav/Fotojav'
+import Curriculum from './componentes/curriculum/curriculum'
+import Mensaweb from './componentes/mensaweb/Mensaweb'
 
 function App() {
 
@@ -24,9 +26,11 @@ function App() {
           <Route path='/come' element={<Come />}></Route>
           <Route path='/comepag' element={<ComePag />}></Route>
           <Route path='/onlycar' element={<Onlycar />}></Route>
+          <Route path='/mensaweb' element={<Mensaweb />}></Route>
           <Route path='/bancomar' element={<Bancomar />}></Route>
           <Route path='/presu' element={<Presu />}></Route>
           <Route path='/fotojav' element={<Fotojav />}></Route>
+          <Route path='/curriculum' element={<Curriculum />}></Route>
 
         </Routes>
         

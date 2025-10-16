@@ -1,0 +1,300 @@
+/* -------------------------------Header--------------------------------------------*/
+.fondoMen{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    overflow:hidden; 
+}
+
+.barraHeaderMen {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    margin-top: 3px;
+    margin-right: 5px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-left: 6px;
+    border-style: solid;
+    border-color: rgba(163, 149, 19, 0.8);
+    border-width: 1px;
+    border-radius: 25px;
+    background: radial-gradient(rgba(255, 50, 50, 0.7), rgba(0, 0, 0, .4));
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.9);
+}
+
+.divHeader1Men {
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.logoHeaderMen {
+    margin-left: 20px;
+    background-image: url(/mensaweb.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 48px;
+    width: 48px;
+    
+}
+
+.nombreHeaderMen {
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.divHeader2Men {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-left: 35%;
+}
+
+.imaBotonGeneralMen{
+    width: 25px;
+    height: 25px;
+    margin-top: -7px;
+    margin-right: 10px;
+}
+
+.botonGeneralMen {
+    position:relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;    
+    letter-spacing: 2px; 
+    color: white;
+    background: radial-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
+    border-radius: 15px;
+    border-color: rgba(163, 149, 19, 0.8);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.8s ease;
+    z-index: 1;
+}
+
+.botonGeneralMen::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(0deg,
+            transparent,
+            transparent 30%,
+            rgba(255, 255, 255, 0.3));
+    transform: rotate(-45deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.botonGeneralMen:hover {
+    transform: scale(1.1);
+    box-Shadow: 10px 10px 10px rgba(255, 200, 200, .2);
+    color: rgba(255, 255, 0, 0.8);
+}
+
+.botonGeneralMen:hover::before {
+    opacity: 1;
+    transform: rotate(-40deg) translateY(100%);
+}
+
+/* ------------------------------- footer --------------------------------------------*/
+
+.divFooterMen {
+    position: absolute;
+    display:flex;
+    bottom: 0;
+    right: 0;
+    margin-left: 0px;
+    margin-right: 4px;
+    padding-left: 10px;
+    width: 99.5%;
+    text-align: left;
+    color: white;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.8);
+    border-width: 1px;
+    border-radius: 10px;
+    background: radial-gradient(rgba(255, 50, 50, 0.7), rgba(0, 0, 0, .4));
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    gap: 10px;
+    z-index: 1;
+}
+
+.imgIcoMen{
+    padding: 3px;
+    width: 25px;
+    height: 25px;
+}
+
+/* ................   acordeon ..................................... */
+
+.contenedorIndiceMen {
+    position: absolute;
+    top: 70px;
+    margin-left: 10px;
+    width: 200px;
+    border-style: solid;
+    border-color:rgba(163, 149, 19, .9);
+    border-width: 2px;
+    border-radius: 8px;
+    color: white;
+    box-Shadow: 10px 10px 10px rgba(255, 50, 50, 0.2);     
+}
+
+.contenedorHojaMen {
+    position: relative;
+    display: grid;   
+    margin: 20px;
+    row-gap: 10px;
+}
+
+#accordion-boton1Men {
+    color: white;
+    background: radial-gradient(rgba(255, 50, 50, 0.7), rgba(0, 0, 0, .4));;
+    outline: 2px ridge rgba(255, 255, 0, 0.4);
+}
+
+#accordion-boton1Men:not(.collapsed)::after {
+    background-image: url(/abajo.png);
+    scale: 1.4;
+}
+
+#accordion-boton1Men::after {
+    background-image: url(/abajo.png);
+    scale: 1.4;
+}
+
+#accordion-boton1Men:hover {
+    background: radial-gradient(rgba(255, 50, 50, 0.9), rgba(0, 0, 0, .4));
+}
+
+#accordion-itemMen {
+    background: transparent;
+    color: white;
+}
+
+.botonAAMen {
+    position: relative;    
+    background: radial-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.8);
+    border-width: 1px;
+    border-radius: 8px;
+    color:white;
+    background: radial-gradient(rgba(255, 50, 50, 0.7), rgba(0, 0, 0, .4));
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.8s ease;
+    z-index: 1;
+}
+
+.botonAAMen:hover {
+    transform: scale(1.1);
+    font-weight: bold;    
+    letter-spacing: 2px;
+    box-Shadow: 10px 10px 10px rgba(50, 50, 50, .1);
+    color: rgba(255, 255, 0, 0.9);
+}
+
+.paginaMen {
+    position: absolute;
+    overflow-y: auto;   
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    margin-top: 70px;
+    margin-left: 250px;
+    margin-right: 0px;
+    height: var(--tAltoMen);
+    max-height: 543px;
+    border-style: solid;
+    border-color: rgba(163, 149, 19, 0.8);
+    border-width: 2px;
+    row-gap: 20px;
+}
+
+.divImagenMen {
+    margin-top: 10px;
+    margin-left: 10px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.8);
+    border-width: 1px;
+    width: 95%;
+    padding: 2px;
+    box-Shadow: 10px 10px 10px rgba(255, 50, 50, 0.4);
+}
+
+.imagenMen {
+   width: 100%;
+}
+
+.divLetraMen {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 95%; 
+}
+
+.tituloMen {
+    color: white;
+    margin-left: 10px;
+    font-size: var(--tLet1Men);    
+}
+
+.tituloLetraMen {
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 95%;
+    font-size: var(--tLetMen);    
+}
+
+.divVideoMen {
+    margin-top: 10px;
+    margin-left: 10px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.8);
+    border-width: 1px;
+    width:140%;
+    padding: 2px;
+    box-Shadow: 10px 10px 10px rgba(255, 50, 50, 0.4);
+}
+
+.videoMen {
+    width: 100%;
+}
+
+.imgIco1Men{
+    width: var(--tLet2Men);
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.imgIco2Men{
+    width: var(--tLet2Men);
+    margin-right: 10px;
+    margin-top: 0px;
+}
+
+.saltoMen {
+   height: 0px;   
+}
+
