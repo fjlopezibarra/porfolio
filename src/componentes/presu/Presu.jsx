@@ -55,7 +55,7 @@ const Presu = () => {
           </div>
           <div className='divHeader2Pre'>
             <button className='botonGeneralPre' onClick={salir} onMouseEnter={cambiarIcono} onMouseLeave={cambiarIcono}>
-              <img className="imaBotonGeneralPre" src={icono ? "home1.png" : "home2.png"} ></img>
+              <img className="imaBotonGeneralPre" src={icono ? "recursos/home1.png" : "recursos/home2.png"} ></img>
               Home
             </button>
           </div>
@@ -119,10 +119,10 @@ const Presu = () => {
         <div className='divLetraPre'>
           <h1 className='tituloPre'>Herramientas</h1>
           <p className='tituloLetraPre'>
-            <img className="imgIco1Pre" src="mysql.png"></img>Base de datos MySQL.<br />
-            <img className="imgIco1Pre" src="java.png"></img>Lenguaje JavaFX.<br />
-            <img className="imgIco1Pre" src="scene.png"></img>Escenas creadas con SceneBuilder.<br />
-            <img className="imgIco1Pre" src="jasper.png"></img>Informes creados con Jaspersoft.<br />
+            <img className="imgIco1Pre" src="recursos/mysql.png"></img>Base de datos MySQL.<br />
+            <img className="imgIco1Pre" src="recursos/java.png"></img>Lenguaje JavaFX.<br />
+            <img className="imgIco1Pre" src="recursos/scene.png"></img>Escenas creadas con SceneBuilder.<br />
+            <img className="imgIco1Pre" src="recursos/jasper.png"></img>Informes creados con Jaspersoft.<br />
 
           </p>
         </div>
@@ -212,7 +212,7 @@ const Presu = () => {
 
         <div className='divVideoPre' id="indice8">
           <video className="videoPre" controls>
-            <source src="/recursospresu/videopresu1.mp4" type="video/mp4" />
+            <source src="recursospresu/videopresu1.mp4" type="video/mp4" />
             Tu navegador no soporta el elemento de video.
           </video>
         </div>
@@ -264,11 +264,11 @@ const Presu = () => {
 
       <footer className='divFooterPre'>
         <span>Proyecto gestión comercial para empresas instaladoras</span>
-        <img className="imgIcoPre" src='java.png'></img>
+        <img className="imgIcoPre" src='recursos/java.png'></img>
         <span className='etiIcoPre'>JavaFX</span>
-        <img className="imgIcoPre" src="scene.png"></img>
-        <img className="imgIcoPre" src="mysql.png"></img>
-        <img className="imgIcoPre" src="jasper.png"></img>
+        <img className="imgIcoPre" src="recursos/scene.png"></img>
+        <img className="imgIcoPre" src="recursos/mysql.png"></img>
+        <img className="imgIcoPre" src="recursos/jasper.png"></img>
       </footer>
 
     </div>

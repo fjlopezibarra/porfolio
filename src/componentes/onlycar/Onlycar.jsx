@@ -58,7 +58,7 @@ const Onlycar = () => {
           </div>
           <div className='divHeader2'>
             <button className='botonGeneral' onClick={salir} onMouseEnter={cambiarIcono} onMouseLeave={cambiarIcono}>
-              <img className="imaBotonGeneral" src={icono ? "home1.png" : "home2.png"} ></img>
+              <img className="imaBotonGeneral" src={icono ? "recursos/home1.png" : "recursos/home2.png"} ></img>
               Home
             </button>
           </div>
@@ -125,10 +125,10 @@ const Onlycar = () => {
         <div className='divLetra'>
           <h1 className='tituloOnly'>Herramientas Backend</h1>
           <p className='tituloLetra'>
-            <img className="imgIco1" src="mysql.png"></img>Base de datos MySQL.<br />
-            <img className="imgIco1" src="java.png"></img>Lenguaje Java con arquitectura en capas.<br />
+            <img className="imgIco1" src="recursos/mysql.png"></img>Base de datos MySQL.<br />
+            <img className="imgIco1" src="recursos/java.png"></img>Lenguaje Java con arquitectura en capas.<br />
             Clases, Controller, DTO (Data Transfer Object), Mapper, Repositorio, Service.<br />
-            <img className="imgIco1" src="spring.png"></img>Frameworks Spring Boot + JPA + Lombok.<br />
+            <img className="imgIco1" src="recursos/spring.png"></img>Frameworks Spring Boot + JPA + Lombok.<br />
             Claves usuario cifradas con Argon2.
           </p>
         </div>
@@ -139,11 +139,11 @@ const Onlycar = () => {
         <div className='divLetra'>
           <h1 className='tituloOnly'>Herramientas Frontend</h1>
           <p className='tituloLetra'>
-            <img className="imgIco1" src="htlm.png"></img>Lenguaje HTML.<br />
-            <img className="imgIco1" src="javascript.png"></img>Lenguaje JavaScript.<br />
-            <img className="imgIco1" src="react.png"></img>Frameworks React.<br />
-            <img className="imgIco1" src="css.png"></img>Lenguaje de estilos CSS.<br />
-            <img className="imgIco2" src="bootstrap.png"></img>Bootstrap.<br />
+            <img className="imgIco1" src="recursos/htlm.png"></img>Lenguaje HTML.<br />
+            <img className="imgIco1" src="recursos/javascript.png"></img>Lenguaje JavaScript.<br />
+            <img className="imgIco1" src="recursos/react.png"></img>Frameworks React.<br />
+            <img className="imgIco1" src="recursos/css.png"></img>Lenguaje de estilos CSS.<br />
+            <img className="imgIco2" src="recursos/bootstrap.png"></img>Bootstrap.<br />
             -Librería Axios.<br />
             -Librería jsPDF.
           </p>
@@ -221,7 +221,7 @@ const Onlycar = () => {
 
         <div className='divVideo' id="indice8">
           <video className="video" controls>
-            <source src="/recursosonlycar/videoonlycar1.mp4" type="video/mp4" />
+            <source src="recursosonlycar/videoonlycar1.mp4" type="video/mp4" />
             Tu navegador no soporta el elemento de video.
           </video>
         </div>
@@ -262,14 +262,14 @@ const Onlycar = () => {
 
       <footer className='divFooter'>
         <span>Proyecto Full-Stack venta on-line</span>
-        <img className="imgIco" src='java.png'></img>
-        <img className="imgIco" src="spring.png"></img>
-        <img className="imgIco" src="mysql.png"></img>
+        <img className="imgIco" src='recursos/java.png'></img>
+        <img className="imgIco" src="recursos/spring.png"></img>
+        <img className="imgIco" src="recursos/mysql.png"></img>
         <span className='etiIco'>JPA</span>
-        <img className="imgIco" src="htlm.png"></img>
-        <img className="imgIco" src="javascript.png"></img>
-        <img className="imgIco" src="css.png"></img>
-        <img className="imgIco" src="react.png"></img>
+        <img className="imgIco" src="recursos/htlm.png"></img>
+        <img className="imgIco" src="recursos/javascript.png"></img>
+        <img className="imgIco" src="recursos/css.png"></img>
+        <img className="imgIco" src="recursos/react.png"></img>
         <label className='etiIco'>Axios</label>
       </footer>
 

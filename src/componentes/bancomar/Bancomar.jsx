@@ -55,7 +55,7 @@ const Bancomar = () => {
           </div>
           <div className='divHeader2Ban'>
             <button className='botonGeneralBan' onClick={salir} onMouseEnter={cambiarIcono} onMouseLeave={cambiarIcono}>
-              <img className="imaBotonGeneralBan" src={icono ? "home1.png" : "home2.png"} ></img>
+              <img className="imaBotonGeneralBan" src={icono ? "recursos/home1.png" : "recursos/home2.png"} ></img>
               Home
             </button>
           </div>
@@ -121,10 +121,10 @@ const Bancomar = () => {
         <div className='divLetraBan'>
           <h1 className='tituloBan'>Herramientas Backend</h1>
           <p className='tituloLetraBan'>
-            <img className="imgIco1Ban" src="mysql.png"></img>Base de datos MySQL.<br />
-            <img className="imgIco1Ban" src="java.png"></img>Lenguaje Java con arquitectura en capas.<br />
+            <img className="imgIco1Ban" src="recursos/mysql.png"></img>Base de datos MySQL.<br />
+            <img className="imgIco1Ban" src="recursos/java.png"></img>Lenguaje Java con arquitectura en capas.<br />
             Clases, Controller, DTO (Data Transfer Object), Mapper, Repositorio, Service.<br />
-            <img className="imgIco1Ban" src="spring.png"></img>Frameworks Spring Boot + JPA + Lombok.<br />
+            <img className="imgIco1Ban" src="recursos/spring.png"></img>Frameworks Spring Boot + JPA + Lombok.<br />
             Claves usuario cifradas con Argon2.
           </p>
         </div>
@@ -135,11 +135,11 @@ const Bancomar = () => {
         <div className='divLetraBan'>
           <h1 className='tituloBan'>Herramientas Frontend</h1>
           <p className='tituloLetraBan'>
-            <img className="imgIco1Ban" src="htlm.png"></img>Lenguaje HTML.<br />
-            <img className="imgIco1Ban" src="javascript.png"></img>Lenguaje JavaScript.<br />
-            <img className="imgIco1Ban" src="react.png"></img>Frameworks React.<br />
-            <img className="imgIco1Ban" src="css.png"></img>Lenguaje de estilos CSS.<br />
-            <img className="imgIco2Ban" src="bootstrap.png"></img>Bootstrap.<br />
+            <img className="imgIco1Ban" src="recursos/htlm.png"></img>Lenguaje HTML.<br />
+            <img className="imgIco1Ban" src="recursos/javascript.png"></img>Lenguaje JavaScript.<br />
+            <img className="imgIco1Ban" src="recursos/react.png"></img>Frameworks React.<br />
+            <img className="imgIco1Ban" src="recursos/css.png"></img>Lenguaje de estilos CSS.<br />
+            <img className="imgIco2Ban" src="recursos/bootstrap.png"></img>Bootstrap.<br />
             -Librería Axios.<br />
             -Librería jsPDF.
           </p>
@@ -217,7 +217,7 @@ const Bancomar = () => {
 
         <div className='divVideoBan' id="indice8">
           <video className="videoBan" controls>
-            <source src="/recursosbancomar/videobancomar1.mp4" type="video/mp4" />
+            <source src="recursosbancomar/videobancomar1.mp4" type="video/mp4" />
             Tu navegador no soporta el elemento de video.
           </video>
         </div>
@@ -269,14 +269,14 @@ const Bancomar = () => {
 
       <footer className='divFooterBan'>
         <span>Proyecto Banca on-line</span>
-        <img className="imgIco" src='java.png'></img>
-        <img className="imgIco" src="spring.png"></img>
-        <img className="imgIco" src="mysql.png"></img>
+        <img className="imgIco" src='recursos/java.png'></img>
+        <img className="imgIco" src="recursos/spring.png"></img>
+        <img className="imgIco" src="recursos/mysql.png"></img>
         <span className='etiIco'>JPA</span>
-        <img className="imgIco" src="htlm.png"></img>
-        <img className="imgIco" src="javascript.png"></img>
-        <img className="imgIco" src="css.png"></img>
-        <img className="imgIco" src="react.png"></img>
+        <img className="imgIco" src="recursos/htlm.png"></img>
+        <img className="imgIco" src="recursos/javascript.png"></img>
+        <img className="imgIco" src="recursos/css.png"></img>
+        <img className="imgIco" src="recursos/react.png"></img>
         <label className='etiIco'>Axios</label>
       </footer>
 

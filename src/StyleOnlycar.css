@@ -34,7 +34,7 @@
 
 .logoHeader {
     margin-left: 20px;
-    background-image: url(/logocoche.png);
+    background-image: url(recursos/logocoche.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -169,12 +169,12 @@
 }
 
 #accordion-boton1:not(.collapsed)::after {
-    background-image: url(/abajo.png);
+    background-image: url(recursos/abajo.png);
     scale: 1.4;
 }
 
 #accordion-boton1::after {
-    background-image: url(/abajo.png);
+    background-image: url(recursos/abajo.png);
     scale: 1.4;
 }
 

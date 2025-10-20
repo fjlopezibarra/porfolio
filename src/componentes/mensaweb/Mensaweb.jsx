@@ -55,7 +55,7 @@ const Mensaweb = () => {
           </div>
           <div className='divHeader2Men'>
             <button className='botonGeneralMen' onClick={salir} onMouseEnter={cambiarIcono} onMouseLeave={cambiarIcono}>
-              <img className="imaBotonGeneralMen" src={icono ? "home1.png" : "home2.png"} ></img>
+              <img className="imaBotonGeneralMen" src={icono ? "recursos/home1.png" : "recursos/home2.png"} ></img>
               Home
             </button>
           </div>
@@ -117,10 +117,10 @@ const Mensaweb = () => {
         <div className='divLetraMen'>
           <h1 className='tituloMen'>Herramientas Backend </h1>
           <p className='tituloLetraMen'> 
-            <img className="imgIco2Men" src="mysql.png"></img>Base de datos MySQL.<br />
-            <img className="imgIco2Men" src="java.png"></img>Lenguaje Java con arquitectura en capas.<br />
+            <img className="imgIco2Men" src="recursos/mysql.png"></img>Base de datos MySQL.<br />
+            <img className="imgIco2Men" src="recursos/java.png"></img>Lenguaje Java con arquitectura en capas.<br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clases, Controller, DTO (Data Transfer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Object), Mapper, Repositorio, Service.<br />
-            <img className="imgIco2Men" src="spring.png"></img>Frameworks Spring Boot + JPA + Lombok.<br />
+            <img className="imgIco2Men" src="recursos/spring.png"></img>Frameworks Spring Boot + JPA + Lombok.<br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Claves usuario cifradas con Argon2.
             
           </p>
@@ -132,11 +132,11 @@ const Mensaweb = () => {
         <div className='divLetraMen'>
           <h1 className='tituloMen'>Herramientas Frontend</h1>
           <p className='tituloLetraMen'>
-            <img className="imgIco2Men" src="htlm.png"></img>Lenguaje HTML.<br />
-            <img className="imgIco2Men" src="javascript.png"></img>Lenguaje JavaScript.<br />
-            <img className="imgIco2Men" src="react.png"></img>Frameworks React.<br />
-            <img className="imgIco2Men" src="css.png"></img>Lenguaje de estilos CSS.<br />
-            <img className="imgIco2Men" src="bootstrap.png"></img>Bootstrap.<br />
+            <img className="imgIco2Men" src="recursos/htlm.png"></img>Lenguaje HTML.<br />
+            <img className="imgIco2Men" src="recursos/javascript.png"></img>Lenguaje JavaScript.<br />
+            <img className="imgIco2Men" src="recursos/react.png"></img>Frameworks React.<br />
+            <img className="imgIco2Men" src="recursos/css.png"></img>Lenguaje de estilos CSS.<br />
+            <img className="imgIco2Men" src="recursos/bootstrap.png"></img>Bootstrap.<br />
             &nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;Librería Axios.<br />
                         
           </p>
@@ -212,7 +212,7 @@ const Mensaweb = () => {
 
         <div className='divVideoMen' id="indice8">
           <video className="videoMen" controls>
-            <source src="/recursospresu/videopresu1.mp4" type="video/mp4" />
+            <source src="recursospresu/videopresu1.mp4" type="video/mp4" />
             Tu navegador no soporta el elemento de video.
           </video>
         </div>
@@ -264,14 +264,14 @@ const Mensaweb = () => {
 
       <footer className='divFooterMen'>
         <span>Proyecto de red social de mensajería</span>
-        <img className="imgIco" src='java.png'></img>
-        <img className="imgIco" src="spring.png"></img>
-        <img className="imgIco" src="mysql.png"></img>
+        <img className="imgIco" src='recursos/java.png'></img>
+        <img className="imgIco" src="recursos/spring.png"></img>
+        <img className="imgIco" src="recursos/mysql.png"></img>
         <span className='etiIco'>JPA</span>
-        <img className="imgIco" src="htlm.png"></img>
-        <img className="imgIco" src="javascript.png"></img>
-        <img className="imgIco" src="css.png"></img>
-        <img className="imgIco" src="react.png"></img>
+        <img className="imgIco" src="recursos/htlm.png"></img>
+        <img className="imgIco" src="recursos/javascript.png"></img>
+        <img className="imgIco" src="recursos/css.png"></img>
+        <img className="imgIco" src="recursos/react.png"></img>
         <label className='etiIco'>Axios</label>
       </footer>
 

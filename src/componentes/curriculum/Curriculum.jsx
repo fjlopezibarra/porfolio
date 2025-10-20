@@ -160,7 +160,7 @@ const Curriculum = () => {
                 <div id="cuadroA2" className='paginaLibro tipo2' >
                     <p className='titulo'>Datos Personales</p>
                     <div className='foto1'></div>
-                    <img className='foto2' src="/recursoscurri/fotocur.jpg"></img>
+                    <img className='foto2' src="recursoscurri/fotocur.jpg"></img>
                     <div className='divEs1'>
                         <p className='es1'>Nombre: Francisco Javier López-Ibarra Castañeda</p>
                         <p className='es1'>Dirección: C/ Modelo nº 8</p>
@@ -211,10 +211,10 @@ const Curriculum = () => {
                 </div>
 
                 <button className='botonLib ret' onClick={retroceder}>
-                    <img src='izquierda.png'></img>
+                    <img src='recursos/izquierda.png'></img>
                 </button>
                 <button className='botonLib ava' onClick={avanzar}>
-                    <img src='derecha.png'></img>
+                    <img src='recursos/derecha.png'></img>
                 </button>
 
                 <div className='paginacion'>
@@ -231,7 +231,7 @@ const Curriculum = () => {
 
                 <div className='divHeaderCur'>
                     <button className='botonGeneralCur' onClick={salir} onMouseEnter={cambiarIcono} onMouseLeave={cambiarIcono}>
-                        <img className="imaBotonGeneralCur" src={icono ? "home1.png" : "home2.png"} ></img>
+                        <img className="imaBotonGeneralCur" src={icono ? "recursos/home1.png" : "recursos/home2.png"} ></img>
                         Home
                     </button>
                 </div>

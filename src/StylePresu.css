@@ -34,7 +34,7 @@
 
 .logoHeaderPre {
     margin-left: 20px;
-    background-image: url(/logopresu.png);
+    background-image: url(recursos/logopresu.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -170,12 +170,12 @@
 }
 
 #accordion-boton1Pre:not(.collapsed)::after {
-    background-image: url(/abajo.png);
+    background-image: url(recursos/abajo.png);
     scale: 1.4;
 }
 
 #accordion-boton1Pre::after {
-    background-image: url(/abajo.png);
+    background-image: url(recursos/abajo.png);
     scale: 1.4;
 }
 

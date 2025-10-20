@@ -34,7 +34,7 @@
 
 .logoHeaderFot {
     margin-left: 20px;
-    background-image: url(/logofoto.png);
+    background-image: url(recursos/logofoto.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -170,12 +170,12 @@
 }
 
 #accordion-boton1Fot:not(.collapsed)::after {
-    background-image: url(/abajo.png);
+    background-image: url(recursos/abajo.png);
     scale: 1.4;
 }
 
 #accordion-boton1Fot::after {
-    background-image: url(/abajo.png);
+    background-image: url(recursos/abajo.png);
     scale: 1.4;
 }
 

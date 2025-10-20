@@ -1,7 +1,7 @@
 /* -------------------------------Presentacion principal--------------------------------------------*/
 
 .panta {
-    background-image: url(/fondoprincipal.jpg);
+    background-image: url(/recursos/fondoprincipal.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -450,7 +450,7 @@
 }
 
 .container .box span::before {
-    content: url(/htlm.png) url(/javascript.png) url(/css3.png) url(/react.png);
+    content: url(/recursos/htlm.png) url(/recursos/javascript.png) url(/recursos/css3.png) url(/recursos/react.png);
     position: absolute;
     top: 0;
     left: 0;
@@ -474,7 +474,7 @@
 }
 
 .container .box span::after {    
-    content: url(/java.png) url(/spring.png) url(/mysql.png);        
+    content: url(/recursos/java.png) url(/recursos/spring.png) url(/recursos/mysql.png);        
     position: absolute;
     bottom: 0;
     right: 0;

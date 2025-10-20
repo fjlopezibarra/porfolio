@@ -154,22 +154,22 @@ const Presentacion = () => {
                 <div id="caraFrontal" className={c3} onClick={onlycar}>
                     <div className='div0'>
                         <div className='div1'>
-                            <img className="icoIma" src='java.png'></img>
-                            <img className="icoIma" src="spring.png"></img>
-                            <img className="icoIma" src="mysql.png"></img>
+                            <img className="icoIma" src='recursos/java.png'></img>
+                            <img className="icoIma" src="recursos/spring.png"></img>
+                            <img className="icoIma" src="recursos/mysql.png"></img>
                             <label className='etiIma'>JPA</label>
                         </div>
                         <div className='div2'>
-                            <img className="ima" src='logocoche.png'></img>
+                            <img className="ima" src='recursos/logocoche.png'></img>
                             <label className='etit'>Onlycar</label>
                             <label className='etit'>Full Stack</label>
                             <label className='etit'>e-commerce</label>
                         </div>
                         <div className='div3'>
-                            <img className="icoIma" src="htlm.png"></img>
-                            <img className="icoIma" src="javascript.png"></img>
-                            <img className="icoIma" src="css.png"></img>
-                            <img className="icoIma" src="react.png"></img>
+                            <img className="icoIma" src="recursos/htlm.png"></img>
+                            <img className="icoIma" src="recursos/javascript.png"></img>
+                            <img className="icoIma" src="recursos/css.png"></img>
+                            <img className="icoIma" src="recursos/react.png"></img>
                             <label className='etiIma'>Axios</label>
                         </div>
                     </div>
@@ -178,14 +178,14 @@ const Presentacion = () => {
                 <div id="caraPosterior" className={c4} onClick={presu} >
                     <div className='div0'>
                         <div className='div1'>
-                            <img className="icoIma" src='java.png'></img>
+                            <img className="icoIma" src='recursos/java.png'></img>
                             <label className='etiIma1'>JavaFX</label>
-                            <img className="icoIma5" src="scene.png"></img>
-                            <img className="icoIma" src="mysql.png"></img>
-                            <img className="icoIma5" src="jasper.png"></img>
+                            <img className="icoIma5" src="recursos/scene.png"></img>
+                            <img className="icoIma" src="recursos/mysql.png"></img>
+                            <img className="icoIma5" src="recursos/jasper.png"></img>
                         </div>
                         <div className='div2'>
-                            <img className="ima" src='logopresu.png'></img>
+                            <img className="ima" src='recursos/logopresu.png'></img>
                             <label className='etit'>Presu</label>
                             <label className='etit'>Back-End</label>
                             <label className='etit'>Gestión comercial</label>
@@ -198,11 +198,11 @@ const Presentacion = () => {
                 <div id="caraDerecha" className={c5} onClick={fotojav}>
                     <div className='div0'>
                         <div className='div1'>
-                            <img className="icoIma" src='visualbasic.png'></img>
-                            <img className="icoIma" src='sql.png'></img>                            
+                            <img className="icoIma" src='recursos/visualbasic.png'></img>
+                            <img className="icoIma" src='recursos/sql.png'></img>                            
                         </div>
                         <div className='div2'>
-                            <img className="ima" src='logofoto.png'></img>
+                            <img className="ima" src='recursos/logofoto.png'></img>
                             <label className='etit'>Fotojav</label>
                             <label className='etit'>Back-End</label>
                             <label className='etit'>Clasificación fotos</label>
@@ -215,22 +215,22 @@ const Presentacion = () => {
                 <div id="caraIzquierda" className={c6} onClick={bancomar}>
                     <div className='div0'>
                         <div className='div1'>
-                            <img className="icoIma" src='java.png'></img>
-                            <img className="icoIma" src="spring.png"></img>
-                            <img className="icoIma" src="mysql.png"></img>
+                            <img className="icoIma" src='recursos/java.png'></img>
+                            <img className="icoIma" src="recursos/spring.png"></img>
+                            <img className="icoIma" src="recursos/mysql.png"></img>
                             <label className='etiIma'>JPA</label>
                         </div>
                         <div className='div2'>
-                            <img className="ima" src='logobancomar.png'></img>
+                            <img className="ima" src='recursos/logobancomar.png'></img>
                             <label className='etit'>Bancomar</label>
                             <label className='etit'>Full Stack</label>
                             <label className='etit'>Gestión bancaria</label>
                         </div>
                         <div className='div3'>
-                            <img className="icoIma" src="htlm.png"></img>
-                            <img className="icoIma" src="javascript.png"></img>
-                            <img className="icoIma" src="css.png"></img>
-                            <img className="icoIma" src="react.png"></img>
+                            <img className="icoIma" src="recursos/htlm.png"></img>
+                            <img className="icoIma" src="recursos/javascript.png"></img>
+                            <img className="icoIma" src="recursos/css.png"></img>
+                            <img className="icoIma" src="recursos/react.png"></img>
                             <label className='etiIma'>Axios</label>
                         </div>
                     </div>
@@ -241,19 +241,19 @@ const Presentacion = () => {
                         <div className='div1'>
                         </div>
                         <div className='div2'>
-                            <img className="ima" src='reloj.png'></img>
-                            <img className='agus' src='AGUS.png'></img>
-                            <img className='agum' src='AGUM.png'></img>
-                            <img className='aguh' src='AGUH.png'></img>
-                            <img className='centro' src='BOTON.png'></img>
+                            <img className="ima" src='recursos/reloj.png'></img>
+                            <img className='agus' src='recursos/agus.png'></img>
+                            <img className='agum' src='recursos/agum.png'></img>
+                            <img className='aguh' src='recursos/aguh.png'></img>
+                            <img className='centro' src='recursos/boton.png'></img>
                             <label className='etit'>Reloj</label>
                             <label className='etit'>Front-End</label>
                             <label className='etit'>Calendario</label>
                         </div>
                         <div className='div3'>
-                            <img className="icoIma" src='htlm.png'></img>
-                            <img className="icoIma" src="javascript.png"></img>
-                            <img className="icoIma" src="css.png"></img>
+                            <img className="icoIma" src='recursos/htlm.png'></img>
+                            <img className="icoIma" src="recursos/javascript.png"></img>
+                            <img className="icoIma" src="recursos/css.png"></img>
                         </div>
                     </div>
                 </div>
@@ -261,22 +261,22 @@ const Presentacion = () => {
                 <div id="caraAbajo" className={c8} onClick={mensaweb}>
                     <div className='div0'>
                         <div className='div1'>
-                            <img className="icoIma" src='java.png'></img>
-                            <img className="icoIma" src="spring.png"></img>
-                            <img className="icoIma" src="mysql.png"></img>
+                            <img className="icoIma" src='recursos/java.png'></img>
+                            <img className="icoIma" src="recursos/spring.png"></img>
+                            <img className="icoIma" src="recursos/mysql.png"></img>
                             <label className='etiIma'>JPA</label>
                         </div>
                         <div className='div2'>
-                            <img className="ima" src='mensaweb.png'></img>
+                            <img className="ima" src='recursos/mensaweb.png'></img>
                             <label className='etit'>MensaWeb</label>
                             <label className='etit'>Full Stack</label>
                             <label className='etit'>Envío de mensajes</label>
                         </div>
                         <div className='div3'>
-                            <img className="icoIma" src="htlm.png"></img>
-                            <img className="icoIma" src="javascript.png"></img>
-                            <img className="icoIma" src="css.png"></img>
-                            <img className="icoIma" src="react.png"></img>
+                            <img className="icoIma" src="recursos/htlm.png"></img>
+                            <img className="icoIma" src="recursos/javascript.png"></img>
+                            <img className="icoIma" src="recursos/css.png"></img>
+                            <img className="icoIma" src="recursos/react.png"></img>
                             <label className='etiIma'>Axios</label>
                         </div>
                     </div>

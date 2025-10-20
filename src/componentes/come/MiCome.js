@@ -18,7 +18,7 @@ class MiCome {
 		miformulario.style.position = "absolute"
 		miformulario.style.top = "50px"
 		miformulario.style.left = "100px"
-		miformulario.style.backgroundImage = "url('/recursoscome/imagenes/PORTADA.png')";
+		miformulario.style.backgroundImage = "url('recursoscome/imagenes/portada.png')";
 		miformulario.style.width = "475px"
 		miformulario.style.height = "550px"
 		miformulario.style.overflow = "hidden"
@@ -35,7 +35,7 @@ class MiCome {
 		miformulariocontrol.style.position = "absolute"
 		miformulariocontrol.style.top = "600px"
 		miformulariocontrol.style.left = "258px"
-		miformulariocontrol.style.backgroundImage = "url('/recursoscome/imagenes/PANELCONTROL.png')";
+		miformulariocontrol.style.backgroundImage = "url('recursoscome/imagenes/panelcontrol.png')";
 		miformulariocontrol.style.width = "156px"
 		miformulariocontrol.style.height = "156px"
 		miformulariocontrol.style.border = "3px solid " + "blue"
@@ -190,14 +190,14 @@ class MiCome {
 		let punto = new Array(22);
 		for (let i = 0; i < 22; i++) { punto[i] = new Array(22); }
 		for (let i = 0; i < 22; i++) {
-			for (let j = 0; j < 22; j++) { punto[i][j] = new Image(); punto[i][j].src = "recursoscome/imagenes/PUNTO.png"; punto[i][j].style.visibility = "hidden" }
+			for (let j = 0; j < 22; j++) { punto[i][j] = new Image(); punto[i][j].src = "recursoscome/imagenes/punto.png"; punto[i][j].style.visibility = "hidden" }
 		}
 
 		let come = new Image()
-		come.src = "recursoscome/imagenes/COMEA.png"
+		come.src = "recursoscome/imagenes/comea.png"
 
 		let come1 = new Image()
-		come1.src = "recursoscome/imagenes/COMEB.png"
+		come1.src = "recursoscome/imagenes/comeb.png"
 
 		let comecanvas = document.createElement('canvas');
 		let comectx = comecanvas.getContext('2d');
@@ -211,7 +211,7 @@ class MiCome {
 		let fan = new Array(56)
 		for (let i = 1; i <= 56; i++) {
 			fan[i] = new Image()
-			fan[i].src = "recursoscome/imagenes/FAN" + i + ".png"
+			fan[i].src = "recursoscome/imagenes/fan" + i + ".png"
 		}
 
 		let fancanvas = new Array(4)
@@ -227,14 +227,14 @@ class MiCome {
 		}
 
 		let ready = new Image()
-		ready.src = "recursoscome/imagenes/READY.png"
+		ready.src = "recursoscome/imagenes/ready.png"
 		ready.style.position = "absolute"
 		ready.style.top = "300px"
 		ready.style.left = "195px"
 		ready.style.visibility = "hidden"
 
 		let gameover = new Image()
-		gameover.src = "recursoscome/imagenes/GAMEOVER.png"
+		gameover.src = "recursoscome/imagenes/gameover.png"
 		gameover.style.position = "absolute"
 		gameover.style.top = "300px"
 		gameover.style.left = "195px"
@@ -245,7 +245,7 @@ class MiCome {
 			cartel[i] = new Image()
 			cartel[i].style.position = "absolute"
 			cartel[i].style.top = "200px"
-			cartel[i].src = "recursoscome/imagenes/ZCARTEL" + i + ".png"
+			cartel[i].src = "recursoscome/imagenes/zcartel" + i + ".png"
 			cartel[i].style.left = 200 + (i - 1) * 40 + "px"
 			cartel[i].style.visibility = "hidden"
 		}
@@ -253,14 +253,14 @@ class MiCome {
 		let cartelfruta = new Image()
 		cartelfruta.style.position = "absolute"
 		cartelfruta.style.top = "0px"
-		cartelfruta.src = "recursoscome/imagenes/ZCARTEL1.png"
+		cartelfruta.src = "recursoscome/imagenes/zcartel1.png"
 		cartelfruta.style.left = "0px"
 		cartelfruta.style.visibility = "hidden"
 
 		let cartelvida = new Image()
 		cartelvida.style.position = "absolute"
 		cartelvida.style.top = "185px"
-		cartelvida.src = "recursoscome/imagenes/VIDA0.png"
+		cartelvida.src = "recursoscome/imagenes/vida0.png"
 		cartelvida.style.left = "25px"
 		cartelvida.style.visibility = "hidden"
 
@@ -271,7 +271,7 @@ class MiCome {
 			vida[i] = new Image()
 			vida[i].style.position = "absolute"
 			vida[i].style.top = "220px"
-			vida[i].src = "recursoscome/imagenes/VIDA1.png"
+			vida[i].src = "recursoscome/imagenes/vida1.png"
 			vida[i].style.left = 20 + (i - 1) * 25 + "px"
 			vida[i].style.visibility = "hidden"
 		}
@@ -281,7 +281,7 @@ class MiCome {
 			fruta[i] = new Image()
 			fruta[i].style.position = "absolute"
 			fruta[i].style.top = "300px"
-			fruta[i].src = "recursoscome/imagenes/FRUTA" + i + ".png"
+			fruta[i].src = "recursoscome/imagenes/fruta" + i + ".png"
 			fruta[i].style.left = "35px"
 			fruta[i].style.visibility = "hidden"
 		}
@@ -291,7 +291,7 @@ class MiCome {
 			muerte[i] = new Image()
 			muerte[i].style.position = "absolute"
 			muerte[i].style.top = "300px"
-			muerte[i].src = "recursoscome/imagenes/MUERTE" + i + ".png"
+			muerte[i].src = "recursoscome/imagenes/muerte" + i + ".png"
 			muerte[i].style.left = "225px"
 			muerte[i].style.visibility = "hidden"
 		}
@@ -299,7 +299,7 @@ class MiCome {
 		let cartelera = new Image()
 		cartelera.style.position = "absolute"
 		cartelera.style.top = "88px"
-		cartelera.src = "recursoscome/imagenes/CARTELERAFRUTA.png"
+		cartelera.src = "recursoscome/imagenes/cartelerafruta.png"
 		cartelera.style.left = "10px"
 		cartelera.style.visibility = "hidden"
 
@@ -366,7 +366,7 @@ class MiCome {
 		let peli
 		let cuentacome
 		let sonido = new Array(8)
-		for (let i = 1; i <= 8; i++) { sonido[i] = new Audio(); sonido[i].src = "recursoscome/sonidos/SONIDO" + i + ".mp3" }
+		for (let i = 1; i <= 8; i++) { sonido[i] = new Audio(); sonido[i].src = "recursoscome/sonidos/sonido" + i + ".mp3" }
 		let kk
 		let nfruta
 		let cuentafruta
@@ -476,7 +476,7 @@ class MiCome {
 			vraton = 1
 			for (let i = 0; i <= 4; i++) { fruy[i] = 0; frux[i] = 0; afruy[i] = 0; afrux[i] = 0; tfruy[i] = 0; tfrux[i] = 0; cf[i] = 0 }
 			accion = 0
-			miformulario.style.backgroundImage = "url('/recursoscome/imagenes/PORTADA.png')";
+			miformulario.style.backgroundImage = "url('recursoscome/imagenes/portada.png')";
 			gameover.style.visibility = "hidden"
 			etiqueta.style.visibility = "hidden"
 			for (let i = 1; i <= 6; i++) { fruta[i].style.visibility = "hidden"; }
@@ -645,7 +645,7 @@ class MiCome {
 			clearInterval(espera)
 			sonido[8].pause()
 			sonido[8].loop = false
-			miformulario.style.backgroundImage = "url('recursoscome/imagenes/FONDO.png')";
+			miformulario.style.backgroundImage = "url('recursoscome/imagenes/fondo.png')";
 			cartelera.style.visibility = "hidden"
 			cartelera.style.transform = "rotate(0deg)"
 			cargarvariables()
@@ -818,7 +818,7 @@ class MiCome {
 					contadorvida++
 					vida[contadorvida].style.visibility = "visible"
 				}
-				cartelfruta.src = "recursoscome/imagenes/ZCARTEL" + nfruta + ".png"
+				cartelfruta.src = "recursoscome/imagenes/zcartel" + nfruta + ".png"
 				cartelfruta.style.top = posiy[0] - 25 + "px"
 				cartelfruta.style.left = posix[0] + "px"
 				fruy[0] = posiy[0] - 25
@@ -1380,7 +1380,7 @@ class MiCome {
 						if (kk == 1) { punto[i][j].style.visibility = "visible" }
 					}
 					if (matrix[i][j] == 3) {
-						punto[i][j].src = "recursoscome/imagenes/DIAMANTE.png"
+						punto[i][j].src = "recursoscome/imagenes/diamante.png"
 						punto[i][j].style.position = "absolute"
 						punto[i][j].style.top = ay + "px"
 						punto[i][j].style.left = ax + "px"

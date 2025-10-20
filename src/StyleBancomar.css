@@ -34,7 +34,7 @@
 
 .logoHeaderBan {
     margin-left: 20px;
-    background-image: url(/logobancomar.png);
+    background-image: url(recursos/logobancomar.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -170,12 +170,12 @@
 }
 
 #accordion-boton1Ban:not(.collapsed)::after {
-    background-image: url(/abajo.png);
+    background-image: url(recursos/abajo.png);
     scale: 1.4;
 }
 
 #accordion-boton1Ban::after {
-    background-image: url(/abajo.png);
+    background-image: url(recursos/abajo.png);
     scale: 1.4;
 }
 

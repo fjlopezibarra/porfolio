@@ -55,7 +55,7 @@ const Fotojav = () => {
           </div>
           <div className='divHeader2Fot'>
             <button className='botonGeneralFot' onClick={salir} onMouseEnter={cambiarIcono} onMouseLeave={cambiarIcono}>
-              <img className="imaBotonGeneralFot" src={icono ? "home1.png" : "home2.png"} ></img>
+              <img className="imaBotonGeneralFot" src={icono ? "recursos/home1.png" : "recursos/home2.png"} ></img>
               Home
             </button>
           </div>
@@ -119,8 +119,8 @@ const Fotojav = () => {
         <div className='divLetraFot'>
           <h1 className='tituloFot'>Herramientas</h1>
           <p className='tituloLetraFot'>
-            <img className="imgIco2Fot" src="visualbasic.png"></img>Microsoft Visual Basic.<br />
-            <img className="imgIco2Fot" src="sql.png"></img>Microsoft SQL Server.<br />
+            <img className="imgIco2Fot" src="recursos/visualbasic.png"></img>Microsoft Visual Basic.<br />
+            <img className="imgIco2Fot" src="recursos/sql.png"></img>Microsoft SQL Server.<br />
             
           </p>
         </div>
@@ -205,7 +205,7 @@ const Fotojav = () => {
 
         <div className='divVideoFot' id="indice8">
           <video className="videoFot" controls>
-            <source src="/recursospresu/videopresu1.mp4" type="video/mp4" />
+            <source src="recursospresu/videopresu1.mp4" type="video/mp4" />
             Tu navegador no soporta el elemento de video.
           </video>
         </div>
@@ -257,8 +257,8 @@ const Fotojav = () => {
 
       <footer className='divFooterFot'>
         <span>Proyecto de clasificación de fotos</span>
-        <img className="imgIcoFot" src='visualbasic.png'></img>
-        <img className="imgIcoFot" src='sql.png'></img>                
+        <img className="imgIcoFot" src='recursos/visualbasic.png'></img>
+        <img className="imgIcoFot" src='recursos/sql.png'></img>                
       </footer>
 
     </div>

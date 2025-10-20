@@ -158,7 +158,7 @@ class MiReloj {
 			aguhs.style.top = "136px"
 			aguhs.style.left = "253px"
 			aguhs.style.transformOrigin = "6px 130px"
-			aguhs.src = "recursosreloj/AGUHS.png"
+			aguhs.src = "recursosreloj/aguhs.png"
 			traspa1.appendChild(aguhs)
 
 			agums = new Image()
@@ -167,7 +167,7 @@ class MiReloj {
 			agums.style.top = "119px"
 			agums.style.left = "254px"
 			agums.style.transformOrigin = "5px 147px"
-			agums.src = "recursosreloj/AGUMS.png"
+			agums.src = "recursosreloj/agums.png"
 			traspa1.appendChild(agums)
 
 			aguss = new Image()
@@ -176,7 +176,7 @@ class MiReloj {
 			aguss.style.top = "110px"
 			aguss.style.left = "255px"
 			aguss.style.transformOrigin = "4px 156px"
-			aguss.src = "recursosreloj/AGUSS.png"
+			aguss.src = "recursosreloj/aguss.png"
 			traspa1.appendChild(aguss)
 
 			aguh = new Image()
@@ -184,7 +184,7 @@ class MiReloj {
 			aguh.style.top = "126px"
 			aguh.style.left = "243px"
 			aguh.style.transformOrigin = "6px 130px"
-			aguh.src = "recursosreloj/AGUH.png"
+			aguh.src = "recursosreloj/aguh.png"
 			traspa1.appendChild(aguh)
 
 			agum = new Image()
@@ -192,7 +192,7 @@ class MiReloj {
 			agum.style.top = "109px"
 			agum.style.left = "244px"
 			agum.style.transformOrigin = "5px 147px"
-			agum.src = "recursosreloj/AGUM.png"
+			agum.src = "recursosreloj/agum.png"
 			traspa1.appendChild(agum)
 
 			agus = new Image()
@@ -200,14 +200,14 @@ class MiReloj {
 			agus.style.top = "100px"
 			agus.style.left = "245px"
 			agus.style.transformOrigin = "4px 156px"
-			agus.src = "recursosreloj/AGUS.png"
+			agus.src = "recursosreloj/agus.png"
 			traspa1.appendChild(agus)
 
 			boton = new Image()
 			boton.style.position = "absolute"
 			boton.style.top = "251px"
 			boton.style.left = "243px"
-			boton.src = "recursosreloj/BOTON.png"
+			boton.src = "recursosreloj/boton.png"
 			traspa1.appendChild(boton)
 
 			// objetos fecha.....................................................

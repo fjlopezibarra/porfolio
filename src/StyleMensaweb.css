@@ -34,7 +34,7 @@
 
 .logoHeaderMen {
     margin-left: 20px;
-    background-image: url(/mensaweb.png);
+    background-image: url(recursos/mensaweb.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -170,12 +170,12 @@
 }
 
 #accordion-boton1Men:not(.collapsed)::after {
-    background-image: url(/abajo.png);
+    background-image: url(recursos/abajo.png);
     scale: 1.4;
 }
 
 #accordion-boton1Men::after {
-    background-image: url(/abajo.png);
+    background-image: url(recursos/abajo.png);
     scale: 1.4;
 }
 
